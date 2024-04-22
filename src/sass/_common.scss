@@ -1,1 +1,61 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $mainFonts;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    color: $primarytextColor;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: $secondaryTextColor;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    outline: none;
+}
