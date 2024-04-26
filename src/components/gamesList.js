@@ -73,3 +73,4 @@ function creatEl(games) {
     )
 }
 
+listRef.append(...)
