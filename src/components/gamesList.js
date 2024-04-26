@@ -73,4 +73,4 @@ function creatEl(games) {
     )
 }
 
-listRef.append(...)
+listRef.append(...creatEl)
