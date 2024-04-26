@@ -16,4 +16,21 @@
     background-color: red;
     width: 576px;
     height: 316px;
+    padding: 46px;
+}
+
+.text-modal{
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    width: 392px;
+    height: 60px;
+}
+
+.input-modal{
+    display: inline-flex;
+    padding: 10px 90px 10px 10px;
+    align-items: flex-start;
+    gap: 10px;
 }
