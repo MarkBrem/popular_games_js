@@ -1,10 +1,11 @@
-.backdrop{
+.modal-backdrop{
+    opacity: 0;
     position: fixed;
     z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.10);
     height: 100%;
     width: 100%;
     top: 0;
@@ -13,24 +14,69 @@
 
 .modal{
     position: absolute;
-    background-color: red;
+    background-color: $backgroundColor;
+    border-radius: 20px;
     width: 576px;
     height: 316px;
     padding: 46px;
 }
 
-.text-modal{
+.close-modal{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.modal-title{
     text-align: center;
     font-family: Inter;
     font-size: 12px;
-    font-style: normal;
+}
+
+.text-modal{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Inter;
+    font-size: 12px;
     width: 392px;
-    height: 60px;
+    margin-bottom: 40px;
+}
+
+.form-text{
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.modal-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .input-modal{
-    display: inline-flex;
+    display: block;
+    border: none;
+    width: 169px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+    background: #D7D7D7;
     padding: 10px 90px 10px 10px;
     align-items: flex-start;
     gap: 10px;
+}
+
+.save-modal{
+    color: $backgroundColor;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: 105px;
+    border: none;
+    background: $textColor;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
