@@ -66,8 +66,9 @@ category: 'acquaintance',
 function creatEl(games) {
     return games.map(
         `
-        <li id=${game.item}>
-            <h1>${game.title}</h1>
+        <li id=${game.id}>
+            <h1 style="
+            ">${game.name}</h1>
         </li>
         `
     )
