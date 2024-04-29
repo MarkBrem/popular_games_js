@@ -73,4 +73,5 @@ function creatEl(games) {
     )
 }
 
-listRef.append(...creatEl)
+const items = creatEl(games)
+listRef.append(...items)
