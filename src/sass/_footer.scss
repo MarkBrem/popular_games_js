@@ -27,7 +27,6 @@ border: none;
 .num-li{
     font-family: Montserrat Alternates;
     font-size: 12px;
-    font-weight: 400;
     line-height: 20.4px;
     text-align: left;
     color: #000000;
@@ -36,7 +35,6 @@ border: none;
     font-family: Montserrat Alternates;
 font-size: 12px;
 color: #FFFFFF;
-font-weight: 400;
 width: 107px;
 height: 35px;
 position: absolute;
@@ -47,6 +45,28 @@ gap: 10px;
 border-radius: 50px 50px ;
 background:  #000000;
 border: none;
+text-align: center;
 
 
+}
+.PS{
+    position: absolute;
+top: 99px;
+left: 600;
+
+
+    color: #000000;
+    font-family: Montserrat Alternates;
+    font-size: 10px;
+    line-height: 7.31px;
+    text-align: left;
+    
+}
+
+
+.logo-foot{
+fill: currentColor;
+position: absolute;
+top: 90px;
+left:320px ;
 }
