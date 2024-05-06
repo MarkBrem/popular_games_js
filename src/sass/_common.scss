@@ -55,7 +55,7 @@ a {
 li {
     list-style-type: none;
 }
-li:not(:last-child){
+.items-js:not(:last-child){
     border-bottom: 1px solid #000;
 }
 
@@ -74,6 +74,7 @@ h1 {
     line-height: normal;
     margin-left: 404px;
     margin-right: 403px;
+    margin-top: 36px;
 }
 
 .hero-title{
