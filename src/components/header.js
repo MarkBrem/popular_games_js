@@ -12,7 +12,7 @@ const dropdownContentRef = document.querySelector('.dropdown-content')
 
         function removeOnClick(event){
 
-                dropdownContentRef.classList.toggle('is-close')
+                dropdownContentRef.classList.toggle('is-open')
         }
     
     };
