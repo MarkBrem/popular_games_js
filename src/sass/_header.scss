@@ -30,8 +30,37 @@ nav{
     margin-right: 50px;
 }
 
-.dropdown-list.is-close{
+.nav-list:nth-child(2){
+    position: relative;
+}
+
+.dropdown-content{
+    display: flex;
+    position: absolute;
+    left: -40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 0px 0px 20px 20px;
+    border-top: 0 ;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+
+    padding: 10px 40px;
+}
+
+.dropdown-content.is-close{
     display: none;
+}
+
+.dropdown-content.is-open{
+    display: flex;
+}
+
+.dropdown-content-item:not(:last-child){
+    margin-bottom: 20px;
 }
 
 .user-container{
@@ -40,8 +69,16 @@ nav{
 }
 
 .nav-list .list-item .nav-link,
-.greeting{
+.greeting,
+.dropdown-content-item{
     color: $textColor;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dropdown-btn{
+    background-color: #fff;
+    border: none;
     font-size: 14px;
     font-weight: 400;
 }
@@ -50,7 +87,7 @@ nav{
     width: 40px;
     border: none;
     border-radius: 11px;
-    background: #7A7A7A;
+    background-color: #7A7A7A;
 }
 
 .greeting{
