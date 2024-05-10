@@ -71,11 +71,11 @@ top: 90px;
 left:320px ;
 }
 
-  
-
-
-.modal-ft{
-    background: #FFFFFF;
+.modal{
+    position: absolute;
+    background-color: $backgroundColor;
+    border-radius: 20px;
+    padding: 46px;
     width: 463px;
     height: 245px;
     gap: 0px;
@@ -83,6 +83,21 @@ left:320px ;
     opacity: 0px;
     
 }
+
+.backdrop{
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.10);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    }
 
 
 
@@ -98,3 +113,6 @@ color: #000000;
 
 line-height: 24.2px;
 text-align: center;}
+
+
+
