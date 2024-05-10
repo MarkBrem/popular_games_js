@@ -1,0 +1,36 @@
+.buttonList{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    margin-top: 36px;
+}
+
+.rockScissorsPaper-button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    background-color: $backgroundColor;
+}
+
+.paper{
+    background-image: url(/src/img/rock-scissor-spaper/paper.png);
+}
+
+.rock{
+    background-image: url(/src/img/rock-scissor-spaper/rock.png);
+}
+
+.scissors{
+    background-image: url(/src/img/rock-scissor-spaper/scissors.png);
+} 
+
+.results{
+    margin-left: 807px;
+}
+
+.computer{
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 36px;
+
+}
