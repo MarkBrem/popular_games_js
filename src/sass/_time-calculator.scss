@@ -1,0 +1,38 @@
+.main-module {
+    height: 257px;
+}
+
+.upper-part {
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.lower-part {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.enter-num {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 45px;
+    border-radius: 20px;
+    background-color: #D7D7D7;
+    border: none;
+    box-shadow: 24px 5px 0px #7E7E7E;
+}
+
+.enter-button {
+    margin-right: 165px;
+    margin-left: -20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    background-color: #000000;
+}
+
