@@ -80,31 +80,29 @@ scissors.addEventListener('click', () => {
     getChoiceScissors(choice)
 })
 
-// function winFunction() {
-//     answer.textContent = 'Ви виграли раунд!'
-//     answer.style.color = '#039900'
-//     winNumber += 1
-//     win.textContent = `Ви - ${winNumber}`
-// }
+function winFunction() {
+    answer.textContent = 'Ви виграли раунд!'
+    answer.style.color = '#039900'
+    winNumber += 1
+    win.textContent = `Ви - ${winNumber}`
+}
 
-// function loseFunction() {
-//     answer.textContent = 'Ви програли раунд!',
-//     answer.style.color = '#ff0000',
-//     loseNumber += 1
-//     lose.textContent = `Комп'ютер- ${loseNumber}`
-// }
+function loseFunction() {
+    answer.textContent = 'Ви програли раунд!',
+    answer.style.color = '#ff0000',
+    loseNumber += 1
+    lose.textContent = `Комп'ютер- ${loseNumber}`
+}
 
-// function drawFunction() {
-//     answer.textContent = 'Нічия'
-//     answer.style.color = '#000'
-// }
+function drawFunction() {
+    answer.textContent = 'Нічия'
+    answer.style.color = '#000'
+}
     
 function computerChoice(choices) {
     const randomIndex = Math.floor(Math.random() * (4 - 1) + 1)
-    computer.textContent = choices[randomIndex - 1]
-    console.log(randomIndex - 1);
-    console.log(choices[2]);
-    return choices[randomIndex];
+    computer.textContent = `Комп'ютер вибрав: ${choices[randomIndex - 1]}`
+    return choices[randomIndex - 1];
 }
 
 function getChoicePaper(computerChoice) {
