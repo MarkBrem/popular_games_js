@@ -1,6 +1,8 @@
+const scientistSection = document.getElementById('10')
 
+const scientistsList = document.createElement('ul');
 
-
+scientistSection.append(scientistsList)
 
 
 const scientists = [
@@ -89,3 +91,11 @@ const scientists = [
     id: 12
     }
     ];
+
+    // function scientistsPhoto(scientists) {
+    //     return scientists.map((scientists)=>{return `
+    //     <li id=${scientists.id}>
+    //     <img class='scientistImg' src="" alt="">
+    //     </li>
+    //     `})
+    // }
