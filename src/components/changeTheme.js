@@ -5,4 +5,5 @@ const buttonThemeRef = document.querySelector('.button-theme');
 
     function onClick (event){
       bodyRef.classList.toggle('night-theme');
+      dropdownBtnRef.classList.toggle('night-theme-btn')
     };
