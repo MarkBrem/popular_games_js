@@ -85,7 +85,6 @@ left:320px ;
 }
 
 .backdrop{
-    opacity: 0;
     pointer-events: none;
     position: fixed;
     z-index: 100;
@@ -104,7 +103,7 @@ left:320px ;
 .modal-tittle{
     width: 188px;
     height: 24px;
-    top: 83px;
+    top:83px;
     left: 138px;
 font-family: Inter;
 font-size: 20px;

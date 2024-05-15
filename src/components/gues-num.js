@@ -1,3 +1,5 @@
+
+// import icon from './img/logo'
 const gameItem = document.getElementById('2') 
 console.log(gameItem);
 
@@ -20,23 +22,27 @@ gameItem.append(form)
 
 
 function checkGuess(inputNum) {
+  console.log(inputNum);
   const p = document.createElement('p')
  p.id = 'result'
   p.classList.add('result')
-    p.randomNumber = Math.floor(Math.random() * 9000) + 1;
+   const randomNumber = Math.floor(Math.random() * 9000) + 1;
     const userGuess = parseInt(input.value);
-
+console.log(randomNumber, userGuess);
     if (userGuess === randomNumber) {
-      document.getElementById('result').textContent = `Вітаю, ви вгадали число ${randomNumber}!`;
+      console.log(`Вітаю, ви вгадали число ${randomNumber}!`);
+      p.textContent = `Вітаю, ви вгадали число ${randomNumber}!`;
     } else {
-      document.getElementById('result').textContent = `Ви програли, комп'ютер загадав число ${randomNumber}.`;
+      p.textContent = `Ви програли, комп'ютер загадав число ${randomNumber}.`;
     }
+
+    gameItem.append(p)
   }
 
   form.addEventListener('submit', onFormSubmit);
   function onFormSubmit(event){
-    event.preventDwfault();
-    const inputNum = inputNum.value;
-    checkGuess(inputNum)
+    event.preventDefault();
+    const inputValue = input.value;
+    checkGuess(inputValue)
   }
 
