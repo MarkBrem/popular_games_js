@@ -9,7 +9,7 @@ body {
     font-weight: 400;
     line-height: normal;
 
-    color: $primarytextColor;
+    // color: $primarytextColor;
 
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 a {
-    color: $secondaryTextColor;
+    // color: $secondaryTextColor;
     text-decoration: none;
 }
 
@@ -55,7 +55,36 @@ a {
 li {
     list-style-type: none;
 }
+.items-js:not(:last-child){
+    border-bottom: 1px solid #000;
+}
 
 input {
     outline: none;
+}
+
+h1 {
+    display: block;
+    color: $textColor;
+
+    font-family: $mainFonts;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 404px;
+    margin-right: 403px;
+    margin-top: 36px;
+}
+
+.hero-title{
+    font-size: 24px;
+    margin-left: 352px;
+    margin-right: 352px;
+}
+
+input{
+    border-radius: 20px;
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
 }
