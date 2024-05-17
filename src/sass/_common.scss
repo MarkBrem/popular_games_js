@@ -8,6 +8,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 
     // color: $primarytextColor;
 
@@ -55,7 +58,53 @@ a {
 li {
     list-style-type: none;
 }
+.items-js:not(:last-child){
+    border-bottom: 1px solid #000;
+}
 
 input {
     outline: none;
+}
+
+h1 {
+    display: block;
+    color: $textColor;
+
+    font-family: $mainFonts;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 404px;
+    margin-right: 403px;
+    margin-top: 36px;
+}
+
+.hero-title{
+    font-size: 24px;
+    margin-left: 352px;
+    margin-right: 352px;
+}
+
+input{
+    border-radius: 20px 0px 0px 20px;
+    background: #D7D7D7;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+.button-input{
+    display: inline-flex;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+    background: #000;
+}
+
+main{
+    background-image: url(../img/main/main.svg);
+    background-size: cover;  
 }
