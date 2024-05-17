@@ -64,14 +64,16 @@ category: 'acquaintance',
 ]
 
 function creatEl(games) {
-    return games.map(
-        `
-        <li id=${game.item}>
-            <h1>${game.title}</h1>
+    return games.map((game) => {
+        return `
+        <li id=${game.id} class = "items-js">
+            <h1 style="
+            ">${game.name}</h1>
         </li>
         `
-    )
+    }).join('')
+        
 }
 
 const items = creatEl(games)
-listRef.append(...items)
+gameListEl.insertAdjacentHTML('beforeend', items)

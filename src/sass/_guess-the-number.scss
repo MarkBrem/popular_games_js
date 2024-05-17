@@ -1,0 +1,41 @@
+.number{
+    font-family: Montserrat Alternates;
+font-size: 12px;
+font-weight: 400;
+margin-top: 40px;
+margin-bottom: 40px;
+line-height: 14.63px;
+text-align: left;
+ width:150px;
+height: 35px;
+padding: 10px 45px 10px 10px;
+gap: 10px;
+border-radius: 50px 50px ;
+opacity: 0px;
+background: #D7D7D7;
+border: none;
+box-shadow: 3px 3px  #7E7E7E ;
+}
+
+.checkGuess{
+    background: #000000;
+width: 50px;
+height: 50px;
+}
+
+
+.result{
+    left: 750px;
+    font-family: Montserrat Alternates;
+size: 12px;
+margin-left: 440px;
+display: flex;
+font-weight: 400;
+line-height: 14.63px;
+text-align: right;
+color: #039900;
+width: 524px;
+height: 115px;
+opacity: 0px;
+
+}
