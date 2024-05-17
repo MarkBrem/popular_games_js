@@ -1,14 +1,15 @@
-.dino-section{
+.section-dinosaur{
     border-top: 1px solid black;
 }
 
-.dino-section-title{
+.dinosaur-section-title{
     color: #000;
 
     font-size: 16px;
     font-weight: 400;
     text-align: center;
 
+    margin-top: 36px;
     margin-bottom: 36px;
 }
 
@@ -17,14 +18,14 @@
 
     width: 720px;
     height: 240px;
-    border: 2px solid black;
+    border-bottom: 2px solid #5a5a5a;
     margin-left: auto;
     margin-right: auto;
 
     overflow: hidden;
 }
 
-.dino{
+.dinosaur{
     position: absolute;
     bottom: 0;
     
@@ -44,7 +45,8 @@
     background-image: url('/src/img/dino/cactus_game.png');
     background-size: 35px 55px;
     
-    animation: cactusAnim 1.2s infinite linear;
+    animation: cactusAnim 1200ms infinite linear;
+    animation-play-state: paused;
 }
 
 @keyframes cactusAnim {
@@ -56,34 +58,8 @@
         left: -50px;
     }
 }
-
-// .big-cactus{
-//     position: absolute;
-//     bottom: 0;
-//     left: 1000;
-
-//     width: 35px;
-//     height: 55px;
-//     background-image: url('/src/img/dino/cactus_game.png');
-//     background-size: 35px 55px;
-
-//     transform: scale(-1, 1);
-
-//     animation: bigCactusAnim 1.2s infinite linear;
-// }
-
-// @keyframes bigCactusAnim {
-//     0%{
-//         left: 800px;
-//     }
-    
-//     100%{
-//         left: -50px;
-//     }
-// }
-
 .jump{
-    animation: jump 0.3s linear;
+    animation: jump 300ms linear;
 }
 
 @keyframes jump {
@@ -110,4 +86,27 @@
     100%{
         bottom: 0px;
     }
+}
+
+.button-start{
+    display: block;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    background-color: black;
+
+    &:hover,
+    &:focus{
+        color: black;
+        background-color: rgb(177, 177, 177);
+    }
+
 }
