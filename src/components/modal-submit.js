@@ -4,8 +4,15 @@ const backdrop = document.querySelector('.js-backdrop');
 
 
 
-openModalBtn.addEventListener('click', onOpenModal)
-function onOpenModal() {
+openModalBtn.addEventListener('submit', onOpenModal)
+function onOpenModal(event){
+event.preventDefault();
 document.body.classList.add('show-modal')
 
+
+
 }
+
+closeModalBtn.addEventListener('click', onCloseModal)
+function onCloseModal() {
+document.body.classList.remove('show-modal')}
