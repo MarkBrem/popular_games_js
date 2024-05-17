@@ -1,62 +1,54 @@
-const student1 = {
+const team = [
+    {
     name:`Єгор`,
     work:`Верска хедеру, Google динозаврик`,
     image:`url`
-};
-
-const student2 = {
+    },
+    {
     name:`Арсеній`,
     work:`Верстка модального вікна, Калькулятор року народження`,
     image:`url`
-};
-
-const student3 = {
+    },
+    {
     name:`Марко`,
     work:`Верстка секції з карточками інтерактивної частини сайту, Гра камінь-ножниці-папір`,
     image:`url`
-}
-
-const student4 = {
+    },
+    {
     name:`Маріна`,
     work:`Верстка футеру, Загадувач чисел`,
     image:`url`
-}
-
-const student5 = {
+    },
+    {
     name:`Артем`,
     work:`Сума-різниця-множення-ділення, `,
     image:`url`
-}
-
-const student6 = {
+    },
+    {
     name:`Влад`,
     work:`Калькулятор часу, Ця секція`,
     image:`url`
-}
-
-const student7 = {
+},
+{
     name:`Деніс`,
     work:`Гра з м'ячем`,
     image:`url`
-}
-
-const student8 = {
+},
+{
     name:`Дем'ян`,
     work:`Найбільше з 3 чисел`,
     image:`url`
-}
-
-const student9 = {
+},
+{
     name:`Лера`,
     work:`Задачі з вченими`,
     image:`url`
-}
+},
+]
 
-const gameContainer = document.getElementById ('') {
+// const gameContainer = document.getElementById ('5')
 
-}
-
-const teamMarkup = students.map(student => {
+const teamMarkup = team.map(student => {
     return `
         <div class="main-module-2">
 
@@ -89,3 +81,4 @@ const teamMarkup = students.map(student => {
     </div>
     `
 }).join('')
+
