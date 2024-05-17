@@ -8,6 +8,9 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 
     // color: $primarytextColor;
 
@@ -99,4 +102,9 @@ input{
     padding: 10px;
     border-radius: 0px 20px 20px 0px;
     background: #000;
+}
+
+main{
+    background-image: url(../img/main/main.svg);
+    background-size: cover;  
 }
