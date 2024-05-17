@@ -46,7 +46,7 @@ const team = [
 },
 ]
 
-// const gameContainer = document.getElementById ('5')
+const gameContainer = document.getElementById ('9')
 
 const teamMarkup = team.map(student => {
     return `
@@ -82,3 +82,4 @@ const teamMarkup = team.map(student => {
     `
 }).join('')
 
+gameContainer.insertAdjacentHTML('beforeend', teamMarkup)
