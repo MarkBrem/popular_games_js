@@ -2,9 +2,9 @@ const dinosaurRef = document.querySelector('.dinosaur');
 const cactusRef = document.querySelector('.cactus');
 const btnStartRef = document.querySelector('.button-start')
 
-        btnStartRef.addEventListener('click', onClick);
+        btnStartRef.addEventListener('click', startGameOnClick);
 
-function onClick(){
+function startGameOnClick(){
         btnStartRef.style.display = 'none'
         cactusRef.style.animationPlayState = 'running'
 
