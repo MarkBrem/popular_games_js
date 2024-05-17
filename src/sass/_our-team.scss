@@ -1,4 +1,38 @@
-.uppper-slider-text {
-    background-color: black;
+.upper-slider-text {
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
+.photo-slider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.student-name {
+    margin-bottom: 20px;
+}
+
+.slider-info {
+    margin-bottom: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upper-slider-text {
+    display: flex;
+    justify-content: center;
+}
+
+.left-slide,
+.right-slide {
+    background-color: white;
+    border: none;
+}
+
+.student-photo {
+    margin-left: 328px;
+    margin-right: 328px;
+}
