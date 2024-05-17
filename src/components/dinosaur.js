@@ -5,6 +5,7 @@ const btnStartRef = document.querySelector('.button-start')
         btnStartRef.addEventListener('click', onClick);
 
 function onClick(){
+        btnStartRef.style.display = 'none'
         cactusRef.style.animationPlayState = 'running'
 
         document.addEventListener('keydown', jump);

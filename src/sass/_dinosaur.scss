@@ -1,5 +1,5 @@
 .section-dinosaur{
-    border-top: 1px solid black;
+    margin-bottom: 36px;
 }
 
 .dinosaur-section-title{
@@ -31,7 +31,7 @@
     
     width: 60px;
     height: 60px;
-    background-image: url('/src/img/dino/dino_game.png');
+    background-image: url('/src/img/dinosaur/dino_game.png');
     background-size: 60px 60px;
 }
 
@@ -42,10 +42,10 @@
 
     width: 35px;
     height: 55px;
-    background-image: url('/src/img/dino/cactus_game.png');
+    background-image: url('/src/img/dinosaur/cactus_game.png');
     background-size: 35px 55px;
     
-    animation: cactusAnim 1200ms infinite linear;
+    animation: cactusAnim 1000ms infinite linear;
     animation-play-state: paused;
 }
 
