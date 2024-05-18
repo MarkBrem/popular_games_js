@@ -4,7 +4,7 @@ const gameItem = document.getElementById('2')
 console.log(gameItem);
 
 const input = document.createElement('input')
-input.type = 'number'
+input.type = 'text'
 input.id = 'userGuess'
 input.classList.add('number')
 input.placeholder = 'Введіть число'
@@ -27,7 +27,7 @@ function checkGuess(inputNum) {
   const p = document.createElement('p')
  p.id = 'result'
   p.classList.add('result')
-   const randomNumber = Math.floor(Math.random() * 9000) + 1;
+   const randomNumber = Math.floor(Math.random() * 10) + 1;
     const userGuess = parseInt(input.value);
 console.log(randomNumber, userGuess);
     if (userGuess === randomNumber) {
@@ -45,5 +45,6 @@ console.log(randomNumber, userGuess);
     event.preventDefault();
     const inputValue = input.value;
     checkGuess(inputValue)
+    event.currentTarget.reset()
   }
 
