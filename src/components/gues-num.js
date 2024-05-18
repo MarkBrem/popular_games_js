@@ -14,6 +14,7 @@ input.placeholder = 'Введіть число'
 const button = document.createElement('button')
 button.type = 'submit'
 button.classList.add('checkGuess')
+button.classList.add('button-input')
 
 const form = document.createElement('form')
 form.append(input, button)

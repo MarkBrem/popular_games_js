@@ -1,0 +1,112 @@
+.section-dinosaur{
+    margin-bottom: 36px;
+}
+
+.dinosaur-section-title{
+    color: #000;
+
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.game{
+    position: relative;
+
+    width: 720px;
+    height: 240px;
+    border-bottom: 2px solid #5a5a5a;
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+}
+
+.dinosaur{
+    position: absolute;
+    bottom: 0;
+    
+    width: 60px;
+    height: 60px;
+    background-image: url('/src/img/dinosaur/dino_game.png');
+    background-size: 60px 60px;
+}
+
+.cactus{
+    position: absolute;
+    bottom: 0;
+    left: 650;
+
+    width: 35px;
+    height: 55px;
+    background-image: url('/src/img/dinosaur/cactus_game.png');
+    background-size: 35px 55px;
+    
+    animation: cactusAnim 1000ms infinite linear;
+    animation-play-state: paused;
+}
+
+@keyframes cactusAnim {
+    0%{
+        left: 650px;
+    }
+    
+    100%{
+        left: -50px;
+    }
+}
+.jump{
+    animation: jump 300ms linear;
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0px;
+    }
+
+    20%{
+        bottom: 40px;
+    }
+
+    40%{
+        bottom: 60px;
+    }
+
+    60%{
+        bottom: 80px;
+    }
+
+    80%{
+        bottom: 60px;
+    }
+
+    100%{
+        bottom: 0px;
+    }
+}
+
+.button-start{
+    display: block;
+
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    background-color: black;
+
+    &:hover,
+    &:focus{
+        color: black;
+        background-color: rgb(177, 177, 177);
+    }
+
+}
