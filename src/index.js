@@ -10,5 +10,4 @@ import './components/header'
 import './components/modal-submit'
 import './components/dinosaur'
 import './components/header'
-
 import './components/dinosaur'
