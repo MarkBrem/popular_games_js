@@ -1,6 +1,5 @@
 .modal-backdrop{
-    opacity: 0;
-    pointer-events: none;
+    opacity: 1;
     position: fixed;
     z-index: 100;
     display: flex;
@@ -14,8 +13,8 @@
 }
 
 .modal-backdrop.show-modal{
-    opacity: 1;
-    pointer-events: all;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal{
