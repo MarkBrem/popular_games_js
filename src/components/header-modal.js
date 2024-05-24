@@ -1,24 +1,25 @@
 const closeModalBtnRef = document.querySelector('[data-action="close-modal"]');
 const backdropModalRef = document.querySelector('.modal-backdrop');
- console.log(closeModalBtnRef); 
- console.log(backdropModalRef);
+const formRef = document.querySelector('.modal-form')
+
+
 closeModalBtnRef.addEventListener('click', onCloseModal);
-function onCloseModal() {
-    backdropModalRef.classList.add('is-hidden');
-};
-
 backdropModalRef.addEventListener('click', onBackdropClose);
-function onBackdropClose(event) {
-    if (event.target === event.currentTarget){
-        onCloseModal();
-    };
+formRef.addEventListener('submit', onSubmit)
+
+function onCloseModal() {
+backdropModalRef.classList.add('is-hidden');
 };
-
-
-function onCloseModal(event){
+function onBackdropClose(event) {
+if (event.target === event.currentTarget){
+onCloseModal();
+};
+};
+function onSubmit(event){
 event.preventDefault();
-backdrop.classList('is-hidden')
-closeModalBtnRef.addEventListener('submit', onCloseModal)}
+console.log(event.currentTarget);
+onCloseModal()
+}
 
 // const openModalBtn = document.querySelector('[data-action="open-modal"]');
 // const closeModalBtn = document.querySelector('[data-action="close-modal"]');
