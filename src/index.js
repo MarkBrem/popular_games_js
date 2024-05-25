@@ -1,4 +1,5 @@
 import './components/gamesList'
+import './components/header-modal'
 import './components/header'
 import './components/rock-scissor-spaper'
 import './components/header'

@@ -3,7 +3,7 @@ const openModalBtn = document.querySelector('[data-action="open-modal"]');
 const closeModalBtn = document.querySelector('[data-action="close-modal"]');
 const backdrop = document.querySelector('.backdrop');
 
-
+ 
 
 
 openModalBtn.addEventListener('submit', onOpenModal)
