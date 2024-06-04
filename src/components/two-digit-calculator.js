@@ -2,28 +2,28 @@
 const htmlString =`<h2>Калькулятор</h2>
     <form action="">
         <label for="">
-        Введіть число
-    <input type="number" id="valueA">
+        
+    <input type="number" id="valueA" placeholder="Введіть число">
 </label>
 </form>
     
     
-<div>
-    <button onclick="calculate('add')">+</button>
-    <button onclick="calculate('sub')">-</button>
-    <button onclick="calculate('mul')">*</button>
-    <button onclick="calculate('div')">/</button>
+<div id="operator-buttons">
+    <button onclick="operationName = 'плюс'">+</button>
+    <button onclick="operationName = 'мінус'">-</button>
+    <button onclick="operationName = 'помножити на'">*</button>
+    <button onclick="operationName = 'поділити на'">/</button>
 </div>
     
 <form action="">
     <label for="">
-        Введіть число
-    <input type="number" id="valueB">
+        
+    <input type="number" id="valueB" placeholder="Введіть число">
 </label>
 </form>
     
 
-    <button onclick="calculate('div')">=</button>
+    <button onclick="calculate(operationName)">=</button>
 
     <form action="">
         <label>
@@ -44,24 +44,28 @@ const outputId = "resultHere";
     }
 
 //2
+
+let operationName;
+
+//3
+    const processNumbersAs = function(operationName, valueA, valueB) {
+      if(operationName == 'плюс')
+        return valueA + valueB;
+      else if(operationName == 'мінус')
+        return valueA - valueB;
+      else if(operationName == 'помножити на')
+        return valueA * valueB;
+      else if(operationName == 'поділити на')
+        return valueA / valueB;
+    }
+    
+//4
     const showOutput = function(whatToShow) {
       document.getElementById(outputId).incertAdjacentHTML = whatToShow;
     }
 
-//3
-    const processNumbersAs = function(operationName, valueA, valueB) {
-      if(operationName == 'add')
-        return valueA + valueB;
-      else if(operationName == 'sub')
-        return valueA - valueB;
-      else if(operationName == 'mul')
-        return valueA * valueB;
-      else if(operationName == 'div')
-        return valueA / valueB;
-    }
-
-//4
-    const calculate = function(operationName){
+//Finali
+    const calculate = function(operationName) {
       x = getInputs(inputIdFirst);
       y = getInputs(inputIdSecond);
 
