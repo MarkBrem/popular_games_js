@@ -1,6 +1,12 @@
 const field = document.createElement('div');
+const football = document.getElementById('7')
 
     field.style.position = 'relative';
+
+field.style.marginLeft = 'auto'
+field.style.marginRight = 'auto'
+field.style.marginBottom = '10px'
+    field.style.marginTop = '10px'
 
     field.style.width = '500px';
 
@@ -14,7 +20,7 @@ const field = document.createElement('div');
 
     field.style.cursor = 'pointer';
 
-    document.body.appendChild(field);
+
 
 
 
@@ -67,4 +73,6 @@ const ball = document.createElement('img');
 
       ball.style.left = ballCoords.left + 'px';
       ball.style.top = ballCoords.top + 'px';
-    };
+};
+    
+    football.appendChild(field);

@@ -1,8 +1,26 @@
-const dinosaurRef = document.querySelector('.dinosaur');
+
+const dinosaurRef = document.getElementById('6');
+function createDinosaur() {
+        return `
+        <section class="section-dinosaur">
+    <div class="container dinosaur-container">
+        <div class="game">
+            <div class="dinosaur"></div>
+            <div class="cactus"></div>
+        </div>
+
+        <button class="button-start" type="button">Почати гру</button>
+    </div>
+</section>
+        `
+}
+const dinosaurSection = createDinosaur()
+dinosaurRef.insertAdjacentHTML('beforeEnd', dinosaurSection)
+
 const cactusRef = document.querySelector('.cactus');
 const btnStartRef = document.querySelector('.button-start')
+btnStartRef.addEventListener('click', startGameOnClick);
 
-        btnStartRef.addEventListener('click', startGameOnClick);
 
 function startGameOnClick(){
         btnStartRef.style.display = 'none'
@@ -10,7 +28,7 @@ function startGameOnClick(){
 
         document.addEventListener('keydown', jump);
 
-        function jump (){
+        function jump() {
                 if(dinosaurRef.classList != 'jump'){
                         dinosaurRef.classList.add('jump');
                 }
@@ -30,6 +48,3 @@ let isAlive = setInterval(function() {
                 window.location.reload();
         }
 },10)
-
-
-

@@ -1,4 +1,3 @@
-import './components/football'
 import './components/gamesList'
 import './components/header-modal'
 import './components/header'
@@ -8,4 +7,5 @@ import './components/rock-scissor-spaper'
 import './components/gues-num'
 import './components/rock-scissor-spaper'
 import './components/two-digit-calculator'
-
+import './components/football'
+import './components/dinosaur'

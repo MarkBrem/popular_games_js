@@ -1,6 +1,7 @@
 const closeModalBtnRef = document.querySelector('[data-action="close-modal"]');
 const backdropModalRef = document.querySelector('.modal-backdrop');
 const formRef = document.querySelector('.modal-form')
+const nameRef = document.querySelector('.greeting')
 
 
 closeModalBtnRef.addEventListener('click', onCloseModal);
@@ -18,7 +19,8 @@ onCloseModal();
 function onSubmit(event){
 event.preventDefault();
 console.log(event.currentTarget);
-onCloseModal()
+    onCloseModal()
+    nameRef.textContent = `Вітаємо, ${event.currentTarget.elements.nameUser.value}`
 }
 
 // const openModalBtn = document.querySelector('[data-action="open-modal"]');
