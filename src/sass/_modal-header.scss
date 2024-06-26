@@ -17,7 +17,7 @@
     opacity: 0;
     pointer-events: none;
 }
-.ft-coding .backdrop.show{
+.ft-coding .backdrop{
     opacity: 0;
     pointer-events: none;
 }
@@ -32,7 +32,10 @@
     height: 316px;
     padding: 46px;
 }
-
+.ft-coding .modal{
+    top: 50%;
+    left: 50%;
+}
 .close-modal{
     position: absolute;
     top: 30px;
