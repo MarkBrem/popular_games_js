@@ -6,6 +6,7 @@ const backdrop = document.querySelector('.backdrop');
 
 
 formRef.addEventListener('submit', onOpenModal)
+
 function onOpenModal(event) {
     event.preventDefault()
     if (event.currentTarget.elements.mail.value !== '') {
