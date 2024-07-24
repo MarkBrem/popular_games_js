@@ -17,9 +17,13 @@ function createDinosaur() {
 const dinosaurSection = createDinosaur()
 dinosaurRef.insertAdjacentHTML('beforeEnd', dinosaurSection)
 
+
+const dinosaurTextureRef = document.querySelector('.dinosaur')
 const cactusRef = document.querySelector('.cactus');
 const btnStartRef = document.querySelector('.button-start')
 btnStartRef.addEventListener('click', startGameOnClick);
+
+
 
 
 function startGameOnClick(){
@@ -27,20 +31,26 @@ function startGameOnClick(){
         cactusRef.style.animationPlayState = 'running'
 
         document.addEventListener('keydown', jump);
+        
+        function jump(e) {
+                if(e.keyCode == 32 && e.target == document.body) {
+                        e.preventDefault();
+                      }
 
-        function jump() {
-                if(dinosaurRef.classList != 'jump'){
-                        dinosaurRef.classList.add('jump');
+                if(dinosaurTextureRef.classList != 'jump'){
+                        dinosaurTextureRef.classList.add('jump');
                 }
+
+                
                 setTimeout(function(){
-                        dinosaurRef.classList.toggle('jump');
+                        dinosaurTextureRef.classList.toggle('jump');
                 }, 300)
         }
             
 }
 
 let isAlive = setInterval(function() {
-        let dinosaurTopPos = parseInt(window.getComputedStyle(dinosaurRef).getPropertyValue('top'));
+        let dinosaurTopPos = parseInt(window.getComputedStyle(dinosaurTextureRef).getPropertyValue('top'));
         let cactusLeftPos = parseInt(window.getComputedStyle(cactusRef).getPropertyValue('left'));
 
         if(cactusLeftPos < 50 && cactusLeftPos > 0 && dinosaurTopPos >= 140){
