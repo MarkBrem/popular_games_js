@@ -1,12 +1,6 @@
 
-.container{
-    position: relative;
-}
 
 .contact-list{
-    position: absolute;
-    top: 40px;
-left: 320px;
 font-size: 12px;
 text-align: left;
 list-style: none;
@@ -14,11 +8,8 @@ color: #000000;
 }
 
 .u-addres{
-    position: absolute;
     background: #D7D7D7;
-border: none;
-    left: 600px;
-    top: 40px;
+    border: none;
     padding: 10px 10px 10px 10px;
     gap: 10px;
     border-radius:  50px 50px;
@@ -32,14 +23,12 @@ border: none;
   
 }
 .subscribe{
-    font-family: Montserrat Alternates;
+font-family: Montserrat Alternates;
 font-size: 12px;
 color: #FFFFFF;
 width: 107px;
 height: 40px;
 position: absolute;
-top: 40px;
-left: 940;
 padding: 10px 10px 10px 10px;
 gap: 10px;
 border-radius: 50px 50px ;
@@ -48,11 +37,6 @@ border: none;
 
 }
 .PS{
-    position: absolute;
-top: 99px;
-left: 600;
-
-
     color: #000000;
     font-family: Montserrat Alternates;
     font-size: 10px;
@@ -63,9 +47,6 @@ left: 600;
 
 
 .logo-foot{
-position: absolute;
 width: 165px;
 height: 70px;
-top: 50px;
-left:60px ;
 }

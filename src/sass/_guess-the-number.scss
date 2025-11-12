@@ -1,10 +1,16 @@
+.forStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    padding: 100px 0;
+}
+
 .number{
-    position: relative;
-    font-family: Montserrat Alternates;
+font-family: Montserrat Alternates;
 font-size: 12px;
 font-weight: 400;
-margin-top: 40px;
-margin-bottom: 40px;
 line-height: 14.63px;
 text-align: left;
  width:150px;
@@ -19,34 +25,38 @@ box-shadow: 3px 3px  #7E7E7E ;
 }
 
 .checkGuess{
-    position: absolute;
+position: absolute;
     // background: #000000; 
 width: 40px;
-height: 37px;
-top: 178px;
-left: 316px;
+height: 35px;
+top: 0px;
+left: 110px;
 border: none;
 box-shadow: 3px 3px  #7E7E7E ;
 background-image: url(../img/ft-svg/Group\ 104.png);
 background-repeat: no-repeat;
-background-size: 30px;
+background-position: center;
+background-size: 20px;
 
 
 }
 
 
 .result{
-    left: 750px;
-    font-family: Montserrat Alternates;
+font-family: Montserrat Alternates;
 size: 12px;
-margin-left: 440px;
 display: flex;
 font-weight: 400;
 line-height: 14.63px;
-text-align: right;
-color: #039900;
-width: 524px;
-height: 115px;
+color: #000;
 opacity: 0px;
+margin-left: 100px;
 
+&.win{
+    color: #039900;
+}
+
+&.lose{
+    color:#ff0000;
+}
 }

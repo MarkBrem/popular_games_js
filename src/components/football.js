@@ -5,20 +5,22 @@ const football = document.getElementById('7')
 
 field.style.marginLeft = 'auto'
 field.style.marginRight = 'auto'
-field.style.marginBottom = '10px'
+field.style.marginBottom = '25px'
     field.style.marginTop = '10px'
 
-    field.style.width = '500px';
+    field.style.width = '1000px';
 
-    field.style.height = '350px';
+    field.style.height = '300px';
 
-    field.style.border = '10px solid black';
+    field.style.border = '3px solid black';
 
-    field.style.backgroundColor = '#00FF00';
+    field.style.backgroundColor = '#5abb58';
 
     field.style.overflow = 'hidden';
 
     field.style.cursor = 'pointer';
+
+    field.style.borderRadius = '20px'
 
 
 
